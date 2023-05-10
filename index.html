@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+    <link rel="icon" href="file:///D:/Web_profile/profileSite/Pages/favicon.ico">
+    <title>ei1510_profile</title>
+
+</head>
+<body>
+<div class="text-center">
+    <!-- 初期からあるやつなんとなく消せない
+        _Layoutのheaderをコメントアウトしてあることを忘れない
+
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    -->
+    <!--アイコン画像と基本情報のセル-->
+    <!--参照： https://getbootstrap.jp/docs/5.0/examples/jumbotron/ -->
+    <div class="container py-4">
+        <!--
+        <header class="pb-3 mb-4 border-bottom">
+            <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+                <span class="fs-4">About</span>
+            </a>
+        </header>
+        -->
+
+        <div class="p-5 mb-4 text-white bg-dark rounded-3">
+            <div class="container-fluid py-5">
+                <!--画像ファイル破損により表示できず-->
+                <img src="file:///D:/Web_profile/profileSite/Pages/icon.jpg" alt="アイコン画像" class="img-thumbnail rounded float-start">
+                <h1 class="display-5 text-center fw-bold">Profile</h1>
+
+                <!--暫く全角空白の力技でインデント体裁をごまかす-->
+                <p class="ms-5 text-start fs-5">　　　　　HN："熱帯魚の煮凝り" または "🦆𓂃 𓈒𓏸"</p>
+                <p class="ms-5 text-start fs-5">　　　　　生誕：12.18</p>
+                <p class="ms-5 text-start fs-5">　　　　　所属：文学研究科 史学専攻</p>
+                <p class="ms-5 text-start fs-5">　　　　　勤務：医学部基礎医学系 (臨時職員)</p>
+                <!--
+                <p class="col-md-8 ms-0 text-start fs-5">氏名：Mayu Kamoshita</p>
+                <p class="col-md-8 ms-0 text-start fs-5">所属：東海大学 文学研究科 史学専攻</p>
+                <p class="col-md-8 ms-0 text-start fs-5">勤務：東海大学 医学部基礎医学系分子生命科学 (臨時職員)</p>
+                <p class="col-md-8 ms-0 text-start fs-5"><a href="#" class="link-white">趣味</a>：読書、ゲーム、Twitter、睡眠</p>
+                <p class="col-md-8 ms-0 text-start fs-5"><a href="#" class="link-white">興味</a>：神話、民族風習、コンピュータほか雑多に</p>
+                -->
+                <p class="ms-5 text-start fs-5">　　　　　趣味：読書、ゲーム、Twitter、睡眠</p>
+                <p class="ms-5 text-start fs-5">　　　　　興味：神話、民族風習、コンピュータほか雑多に</p>
+                <p class="ms-5 text-start fs-5">　　　　　研究分野：深層学習(他諸々)、考古学(型式学)、文化財科学など</p>
+
+
+                <a class="btn btn-secondary btn-lg" href="https://twitter.com/ei1510" type="button">Twitter<br>(大学)</a>
+                <a class="btn btn-secondary btn-lg" href="https://twitter.com/Sa_sa_ba" type="button">Twitter<br>(日常)</a>
+                <a class="btn btn-secondary btn-lg" type="button" disabled>Discord<br>甲鳥#3117 </a>
+                <a class="btn btn-secondary btn-lg" href="https://instagram.com/kamoshi1218?igshid=ZGUzMzM3NWJiOQ==" type="button">Instagram</a>
+                <!--
+                <a class="btn btn-secondary btn-lg" href="https://www.facebook.com/profile.php?id=100007089511302" type="button" disabled>facebook</button>
+                <a class="btn btn-secondary btn-lg" href="https://atcoder.jp/users/ei1510" type="button" disabled>At Coder</button>
+                <a class="btn btn-secondary btn-lg" href="https://mypage.syosetu.com/772006" type="button" disabled>なろう</button>
+                -->
+            </div>
+        </div>
+
+
+        <div class="row align-items-md-stretch">
+            <div class="col-md-6">
+                <div class="h-100 p-5 bg-light border rounded-3">
+                    <!--JavaScript behavior ：タブの作成-->
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active"
+                                    id="skill-tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#skill"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="skill"
+                                    aria-selected="true">
+                                Skill
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link"
+                                    id="career-tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#career"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="career"
+                                    aria-selected="false">
+                                経歴
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link"
+                                    id="achievement-tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#achievement"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="achievement"
+                                    aria-selected="false">
+                                業績
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link"
+                                    id="interest-tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#interest"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="interest"
+                                    aria-selected="false">
+                                興味・関心
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link"
+                                    id="preferences-tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#preferences"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="preferences"
+                                    aria-selected="false">
+                                好き嫌い
+                            </button>
+                        </li>
+                    </ul>
+                    <!--タブの内容-->
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade　show active"
+                             id="skill"
+                             role="tabpanel"
+                             aria-labelledby="skill-tab">
+
+                            <p class="text-lg-start text-dark border-bottom border-secondary border-3">
+                                ○ Skill
+                            </p>
+                            <p class="text-md-start">It is still being edited now.</p>
+
+                        </div>
+                        <div class="tab-pane fade"
+                             id="career"
+                             role="tabpanel"
+                             aria-labelledby="career-tab">
+
+                            <p class="text-lg-start text-dark border-bottom border-secondary border-3">
+                                ○ 経歴
+                            </p>
+                            <p class="text-md-start">
+                                2015.4：工業高校(情報科) 入学<br>
+                                2018.3：工業高校(情報科) 卒業<br>
+                                2018.4：大学(考古学専攻) 入学<br>
+                                2022.3：大学(考古学専攻) 卒業<br>
+                                2022.4：大学院(史学専攻) 入学<br>
+                                ～現在：在学中
+                            </p>
+                            <p class="text-lg-start text-dark border-bottom border-secondary border-3">
+                                ○ 所属
+                            </p>
+                            <p class="text-md-start">
+                                ◍ <a href="https://www.tokaikouko.com/">幣学科</a><br>
+                                ◍ <a href="https://sites.google.com/site/hiromimatsumae/info/%E3%83%A1%E3%83%B3%E3%83%90%E3%83%BC">勤務先</a><br>
+                                ◍ <a href="https://www.hamako-ths.ed.jp/home/page_20210514070118/page_20210531064828">出身</a><br>
+                            </p>
+
+                        </div>
+                        <div class="tab-pane fade"
+                             id="achievement"
+                             role="tabpanel"
+                             aria-labelledby="achievement-tab">
+
+                            <p class="text-lg-start text-dark border-bottom border-secondary border-3">
+                                ○ 業績
+                            </p>
+                            <p class="text-md-start">
+                                [成果物]<br>
+                                It is still being edited now.<br>
+                                [論文]<br>
+                                It is still being edited now.<br>
+                                [学会発表]<br>
+                                It is still being edited now.<br>
+                                [受賞歴]<br>
+                                総長賞 (学部卒業時)<br>
+                                [資格など]<br>
+                                学芸員資格<br>
+                            </p>
+                        </div>
+                        <div class="tab-pane fade"
+                             id="interest"
+                             role="tabpanel"
+                             aria-labelledby="interest-tab">
+
+                            <p class="text-lg-start text-dark border-bottom border-secondary border-3">
+                                ○ 興味
+                            </p>
+                            <p class="text-md-start">
+                                ◍動植物(生物)<br>
+                                ◍天体 / 天文学<br>
+                                ◍神話 / 民俗伝承<br>
+                                ◍文化人類学 (民俗学 / 考古学 / 史学)<br>
+                                ◍イタリア語 / ドイツ語 / ルーマニア語 / 中国語<br>
+                                ◍物理学<br>
+                                ◍化学<br>
+                            </p>
+                            <p class="text-lg-start text-dark border-bottom border-secondary border-3">
+                                ○ 関心
+                            </p>
+                            <p class="text-md-start">
+                                ◍ 山歩き<br>
+                                ◍ 生物採集<br>
+                                ◍ 旅行<br>
+                            </p>
+                            <p class="text-lg-start text-dark border-bottom border-secondary border-3">
+                                ○ 勉強中
+                            </p>
+                            <p class="text-md-start">
+                                ◍情報工学 / 電子工学<br>
+                                ◍数学<br>
+                            </p>
+                        </div>
+                        <div class="tab-pane fade"
+                             id="preferences"
+                             role="tabpanel"
+                             aria-labelledby="preferences-tab">
+
+                            <p class="text-lg-start text-dark border-bottom border-secondary border-3">
+                                ○ 好き
+                            </p>
+                            <p class="text-md-start">
+                                [食べ物]<br>
+                                ◍珈琲 / お茶<br>
+                                ◍アイス<br>
+                                ◍ゼリー<br>
+                                ◍飴<br>
+                                ◍駄菓子<br>
+                                ◍オレンジジュース<br>
+                                ◍エナジードリンク<br>
+                                <br>
+                                [その他]<br>
+                                ◍アーチェリー (最近はやってない)<br>
+                                ◍猫<br>
+                                ◍活字<br>
+                            </p>
+                            <p class="text-lg-start text-dark border-bottom border-secondary border-3">
+                                ○ 苦手
+                            </p>
+                            <p class="text-md-start">
+                                [食べ物]<br>
+                                ◍極度に甘いもの
+                                ◍乳製品 (生クリーム / ホイップクリーム / 牛乳等)
+                                <br>
+                                [その他]<br>
+                                ◍犬<br>
+                                ◍大きな物音や声<br>
+                                ◍コミュニケーション<br>
+                                ◍物理 / 英語<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="h-100 p-5 bg-light border rounded-3">
+                    <!--Twitterの埋め込み
+                        婚活用基礎データ (興味がある方はDMください) https://privatter.net/p/10026803
+                    -->
+                    <a class="twitter-timeline" href="https://twitter.com/ei1510?ref_src=twsrc%5Etfw">Tweets by ei1510</a>
+
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+            </div>
+        </div>
+
+        <!--コピーライト-->
+        <footer class="pt-3 mt-4 text-muted border-top">
+            &copy; 2023, <a href="https://twitter.com/ei1510" class="link-white">ei1510</a>
+        </footer>
+    </div>
+
+</div>
+</body>
+</html>
